@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Productivity Grade Calendar</title>
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <button id="prevMonth" aria-label="Previous Month">&lt;</button>
+      <h1 id="monthYear"></h1>
+      <button id="nextMonth" aria-label="Next Month">&gt;</button>
+    </header>
+    <table id="calendar">
+      <thead>
+        <tr>
+          <th>Sun</th>
+          <th>Mon</th>
+          <th>Tue</th>
+          <th>Wed</th>
+          <th>Thu</th>
+          <th>Fri</th>
+          <th>Sat</th>
+        </tr>
+      </thead>
+      <tbody id="calendarBody">
+        <!-- Calendar rows will be generated here -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Legend for grade colors -->
+  <div class="legend">
+    <h2>Grade Legend</h2>
+    <ul>
+      <li><span class="grade-box grade-s"></span> S (Exceptional Productivity)</li>
+      <li><span class="grade-box grade-a"></span> A (Excellent)</li>
+      <li><span class="grade-box grade-b"></span> B (Good)</li>
+      <li><span class="grade-box grade-c"></span> C (Fair)</li>
+      <li><span class="grade-box grade-d"></span> D (Poor)</li>
+      <li><span class="grade-box grade-f"></span> F (Unproductive)</li>
+    </ul>
+  </div>
+
+  <!-- Link to script file -->
+  <script src="script.js"></script>
+</body>
+</html>
